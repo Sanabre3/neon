@@ -1,0 +1,43 @@
+* {
+    background-color: gray;
+}
+
+body, html, #app {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#app {
+    overflow: hidden;
+    touch-action: pan-up;
+    color: #ffffff;
+    font-family: 'montserrat', sans-serif;
+    text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
+}
+
+#app h1{
+    --fontsize: 60px;
+    --lineheifht: 80px;
+    width: auto;
+    height: calc(2 * var(--lineheifht));
+    line-height: var(--lineheifht);
+    margin: calc(50vh -var(--lineheifht)) auto 0;
+    font-size: var(--fontsize);
+    text-transform: uppercase;
+}
+
+#app a {
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+
+#app canvas {
+    display: block;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+}
